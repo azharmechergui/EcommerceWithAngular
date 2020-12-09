@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestion Des Produits</title>
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">Gestion Produits</a>
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="navbar-item">
+        <a class="nav-link" routerLink="/produits">Home</a>
+      </li>
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-item nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Produits</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" routerLink="/add-produit">Ajouter</a>
+        <a class="dropdown-item" href="#">Lister</a>
+      </div>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">[username]</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Login</a>
+          <a class="dropdown-item" href="#">Logout</a>
+          <a class="dropdown-item" href="#">Profile</a>
+        </div>
+      </li>
+    </ul>
+
+  </nav>
+
+
+
+
+
+
+  <router-outlet></router-outlet>
+</body>
+
+</html>
